@@ -1,0 +1,13 @@
+/*单行文字溢出点点效果*/
+.ell {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*多行文字超出点点点效果 对-webkit-私有前缀支持良好的浏览器*/
+.ell-rows-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
